@@ -1,0 +1,118 @@
+/* container */
+.desafio-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+}
+
+/* card */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* títulos */
+.card h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #0084ff;
+}
+
+/* texto */
+.card p {
+  text-align: justify;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* inputs */
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* botão */
+.card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+
+  background-color: #0084ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background-color: #006edc;
+}
+
+/* imagem */
+.card img {
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+/* blocos internos */
+.bloco {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f1f3f5;
+}
+
+/* LINKS DESAFIOS */
+
+nav ul li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav ul li a:hover {
+  transform: scale(1.1);
+  letter-spacing: 0.5px;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 12px;
+  bottom: 4px;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: calc(100% - 24px);
+}
+
+/* cor específica desafios */
+nav ul li a:hover {
+  color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.15);
+}
+
+namoro_logo {
+  text-align: center;
+}

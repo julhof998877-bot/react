@@ -1,0 +1,120 @@
+/* reset básico */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* container */
+.header-inner-content {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* navbar */
+.navbar {
+  background-color: #2c2c2c;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
+/* logo */
+.logo {
+  color: #0084ff;
+}
+
+.logo span {
+  color: white;
+}
+
+#blablabla {
+  color: red;
+}
+
+/* menu */
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* links base */
+nav ul li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* animação */
+nav ul li a:hover {
+  transform: scale(1.1);
+  letter-spacing: 0.5px;
+}
+
+/* underline animado */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 12px;
+  bottom: 4px;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: calc(100% - 24px);
+}
+
+/* página ativa */
+nav ul li a.active {
+  font-weight: bold;
+}
+
+/* INÍCIO */
+.link-inicio:hover,
+.link-inicio.active {
+  color: #3b82f6;
+  background-color: rgba(59, 130, 246, 0.15);
+}
+
+/* TESTES */
+.link-menu-testes:hover,
+.link-menu-testes.active,
+.link-teste:hover,
+.link-teste.active {
+  color: #10b981;
+  background-color: rgba(16, 185, 129, 0.15);
+}
+
+/* DESAFIOS */
+.link-desafios:hover,
+.link-desafios.active {
+  color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.15);
+}
+
+/* MODELO */
+.link-modelo:hover,
+.link-modelo.active {
+  color: #f97316;
+  background-color: rgba(249, 115, 22, 0.15);
+}
